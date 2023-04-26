@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2",
     "console.table": "^0.10.0",
+    "dotenv": "^16.0.3",
+    "figlet": "^1.6.0",
     "inquirer": "^8.2.4",
     "mysql2": "^3.2.3",
     "nodemon": "^2.0.22"

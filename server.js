@@ -1,8 +1,8 @@
-const connection = require("./config/connection");
-const inquirer = require("inquirer");
-const cTable = require("console.table");
-const chalk = require("chalk");
-const figlet = require("figlet");
+const connection = require('./config/connection');
+const inquirer = require('inquirer');
+const cTable = require('console.table');
+const chalk = require('chalk');
+const figlet = require('figlet');
 
 connection.connect((error) => { 
     if (error) throw error;
@@ -95,12 +95,12 @@ const viewAllRoles = () => {
 const addEmployee = () => {
     inquirer.prompt([
         {
-            name: 'firstname',
+            name: 'first_name',
             type: 'input',
             message: 'What is the employees first name?'
         },
         {
-            name: 'lastname',
+            name: 'last_name',
             type: 'input',
             message: 'What is the employees last name?'
         },
@@ -111,13 +111,13 @@ const addEmployee = () => {
         },
         {
             name: 'id',
-            type: 'input',
+            type: 'integer',
             message: 'What is the employees id?'
         },
         {
             name: 'manager',
             type: 'input',
-            message: 'Who is their manager?'
+            message: 'What is the managers id?'
         }
     ])
     .then((answer) => { 
@@ -144,7 +144,7 @@ const addRole = () => {
         {
             name: 'department',
             type: 'input',
-            message: 'What is the department for this role?'
+            message: 'What is the department id for this role?'
         }
     ])
     .then((answer) => {
