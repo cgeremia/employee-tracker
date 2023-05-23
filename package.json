@@ -4,7 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "mysql db/employee.db < db/schema.sql",
+    "seed": "mysql db/employee.db < db/seeds.sql",
+    "db": "mysql db/employee.db",
+    "watch": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +22,7 @@
     "inquirer": "^8.2.4",
     "mysql": "^2.18.1",
     "mysql2": "^3.2.4",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "openssl": "^2.0.0"
   }
 }

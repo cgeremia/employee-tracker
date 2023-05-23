@@ -18,7 +18,7 @@ A command-line application that accepts user input to be able to view and manage
   ## Installation
  npm install dependencies
  Inquirer @8.2.4 
- MSQL2
+ MSQL
  Console.table
  Figlet
  Chalk
